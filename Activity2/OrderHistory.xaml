@@ -1,0 +1,130 @@
+﻿<Window x:Class="Activity2.OrderHistory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activity2"
+        mc:Ignorable="d"
+        Title="OrderHistory" Height="451" Width="620" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Screenshot (179).png"/>
+        </Grid.Background>
+        <DataGrid x:Name="voidtable" HorizontalAlignment="Left" Height="322" Margin="23,66,0,0" VerticalAlignment="Top" Width="482" IsReadOnly="True" Foreground="Black" >
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB669ED"/>
+                    <GradientStop Color="#FF8EA6DF" Offset="1"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+        </DataGrid>
+        
+        <Button x:Name="back_btn" HorizontalAlignment="Left" Height="60" Margin="526,66,0,0" VerticalAlignment="Top" Width="60" Click="back_btn_Click" BorderBrush="{x:Null}">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                    <Image Source="/back-blue-button-xs-removebg-preview.png"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button x:Name="admin_window" HorizontalAlignment="Left" Height="60" Margin="526,149,0,0" VerticalAlignment="Top" Width="60" BorderBrush="{x:Null}" Click="Admin_Win_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                    <Image Source="/360_F_509708727_A2djiNxEF7pcsLedpEz0dcMKzjIrw9ri-removebg-preview.png"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="23,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="en-ph" Text="Order History"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="23,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="11.5" FontStyle="Italic" Foreground="White">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="en-ph" Text="Select order to print receipt"/><Run Text="."/></TextBlock>
+        
+        <Button HorizontalAlignment="Left" Height="60" Margin="526,234,0,0" VerticalAlignment="Top" Width="60" BorderBrush="{x:Null}" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                    <Image Source="/4720176.png"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button x:Name="print_receipt" HorizontalAlignment="Left" Height="60" Margin="526,328,0,0" VerticalAlignment="Top" Width="60" BorderBrush="{x:Null}" Click="print_receipt_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                    <Image Source="/8342615.png"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Window>

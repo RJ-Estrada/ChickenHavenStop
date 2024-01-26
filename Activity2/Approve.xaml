@@ -1,0 +1,232 @@
+﻿<Window x:Class="Activity2.Approve"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activity2"
+        mc:Ignorable="d"
+        Title="Approve" Height="537" Width="787" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
+    <Grid x:Name="MenuForPizza">
+        <Grid.Background>
+            <ImageBrush ImageSource="/abstract-background-6m6cjbifu3zpfv84.jpg"/>
+        </Grid.Background>
+        <DataGrid Name="retrieved_info" HorizontalAlignment="Left" Height="338" Margin="30,76,0,0" VerticalAlignment="Top" Width="702" IsReadOnly="True" Visibility="Hidden" >
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+            <DataGrid.Columns>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="acc_approve" Content="Approve" HorizontalAlignment="Left" Height="43" Margin="734,484,0,0" VerticalAlignment="Top" Width="200" Click="acc_approve_Click" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8B38EB"/>
+                    <GradientStop Color="#FF2959ED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Reject" Content="Reject" HorizontalAlignment="Left" Height="44" Margin="734,547,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click" Foreground="White" FontWeight="Bold" FontSize="14" BorderBrush="White" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF843AEB"/>
+                    <GradientStop Color="#FF2A59ED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="main_back" HorizontalAlignment="Left" Height="52" Margin="707,11,0,0" VerticalAlignment="Top" Width="54" BorderBrush="{x:Null}" Click="Button_Click_1">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/back-blue-button-xs-removebg-preview.png"/>
+            </Button.Background>
+        </Button>
+        <DataGrid x:Name="MenuForChicken" HorizontalAlignment="Left" Height="169" Margin="30,71,0,0" VerticalAlignment="Top" Width="347" IsReadOnly="True" Foreground="Black" Visibility="Hidden" >
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <TextBlock x:Name="shop" HorizontalAlignment="Left" Height="28" Margin="34,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White" Visibility="Hidden">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="en-ph" Text="Menu For Shop"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="shop2" HorizontalAlignment="Left" Height="16" Margin="34,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="11.5" FontStyle="Italic" Foreground="White" Visibility="Hidden">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="Update the "/><Run Language="en-ph" Text="price and add menus"/><Run Text="."/></TextBlock>
+        <TextBlock x:Name="userreg" HorizontalAlignment="Left" Height="28" Margin="34,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White" Visibility="Hidden">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="en-ph" Text="User Register History"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="userreg2" HorizontalAlignment="Left" Height="16" Margin="34,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" FontSize="11.5" FontStyle="Italic" Foreground="White" Visibility="Hidden">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="Update the "/><Run Text="p"/><Run Text="ending status of the registered accounts"/><Run Language="en-ph" Text="."/></TextBlock>
+        <DataGrid x:Name="MenuForDrinks" HorizontalAlignment="Left" Height="169" Margin="30,245,0,0" VerticalAlignment="Top" Width="347" IsReadOnly="True" Foreground="Black" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" >
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.08"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.848"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <DataGrid x:Name="MenuForMeals" HorizontalAlignment="Left" Height="169" Margin="389,245,0,0" VerticalAlignment="Top" Width="347" IsReadOnly="True" Foreground="Black" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" >
+            <DataGrid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.08"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.848"/>
+                </TransformGroup>
+            </DataGrid.RenderTransform>
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <DataGrid x:Name="MenuForPizza1" HorizontalAlignment="Left" Height="169" Margin="389,71,0,0" VerticalAlignment="Top" Width="347" IsReadOnly="True" Visibility="Hidden" >
+            <DataGrid.Effect>
+                <DropShadowEffect/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <Button x:Name="price_edit" Content="Edit Price" HorizontalAlignment="Left" Height="43" Margin="80,434,0,0" VerticalAlignment="Top" Width="247" BorderBrush="White" Foreground="White" FontSize="14" FontWeight="Bold" Click="price_edit_Click" Visibility="Hidden">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF743FEB"/>
+                    <GradientStop Color="#FF3555ED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="add_menu" Content="Add Menu" HorizontalAlignment="Left" Height="43" Margin="439,434,0,0" VerticalAlignment="Top" Width="247" BorderBrush="White" Foreground="White" FontSize="14" FontWeight="Bold" Click="add_menu_Click" Visibility="Hidden">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF743FEB"/>
+                    <GradientStop Color="#FF3555ED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="update_info" Content="Update" HorizontalAlignment="Left" Height="43" Margin="242,434,0,0" VerticalAlignment="Top" Width="286" FontWeight="Bold" FontSize="14" BorderBrush="White" Foreground="White" Click="update_info_Click" Visibility="Hidden">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF7B3DEB"/>
+                    <GradientStop Color="#FF3455ED" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="MenuSettings" HorizontalAlignment="Left" Height="241" Margin="103,0,0,0" VerticalAlignment="Center" Width="238" Click="MenuSettings_Click" BorderBrush="{x:Null}" FontFamily="Gill Sans MT" FontWeight="Bold" FontSize="40">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                        <Image Source="/4914ff227.png">
+                                            <Image.OpacityMask>
+                                                <ImageBrush ImageSource="/4914ff227.png"/>
+                                            </Image.OpacityMask>
+                                        </Image>
+                                    </Border>
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" Text="MENU" Foreground="White">
+                                            <TextBlock.Effect>
+                                                <DropShadowEffect/>
+                                            </TextBlock.Effect>
+                                        </TextBlock>
+                                        <TextBlock Text="SETTINGS" Foreground="White" HorizontalAlignment="Center">
+                                            <TextBlock.Effect>
+                                                <DropShadowEffect/>
+                                            </TextBlock.Effect>
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button x:Name="bck_app" HorizontalAlignment="Left" Height="52" Margin="707,11,0,0" VerticalAlignment="Top" Width="54" BorderBrush="{x:Null}" Click="bck_app_Click" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/back-blue-button-xs-removebg-preview.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="UserSettings" HorizontalAlignment="Left" Height="241" Margin="414,0,0,0" VerticalAlignment="Center" Width="238" Click="UserSettings_Click" BorderBrush="{x:Null}" FontFamily="Gill Sans MT" FontWeight="Bold" FontSize="40" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Grid>
+                                    <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                        <Image Source="/3892125.png"/>
+                                    </Border>
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock HorizontalAlignment="Center" Text="USER" Foreground="White">
+                                            <TextBlock.Effect>
+                                                <DropShadowEffect/>
+                                            </TextBlock.Effect>
+                                        </TextBlock>
+                                        <TextBlock Text="SETTINGS" Foreground="White" HorizontalAlignment="Center">
+                                            <TextBlock.Effect>
+                                                <DropShadowEffect/>
+                                            </TextBlock.Effect>
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Grid>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Button.Style>
+        </Button>
+
+        <Button x:Name="bck_app2" HorizontalAlignment="Left" Height="52" Margin="707,11,0,0" VerticalAlignment="Top" Width="54" BorderBrush="{x:Null}" Click="bck_app2_Click" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/back-blue-button-xs-removebg-preview.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

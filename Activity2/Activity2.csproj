@@ -1,0 +1,204 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1698402555354.jpg" />
+    <None Remove="1803143.png" />
+    <None Remove="206428-arrow-abstract-red-orange-and-blue-gradient-background.jpg" />
+    <None Remove="360_F_509708727_A2djiNxEF7pcsLedpEz0dcMKzjIrw9ri-removebg-preview.png" />
+    <None Remove="3892125.png" />
+    <None Remove="4720176.png" />
+    <None Remove="4914ff227.png" />
+    <None Remove="527489.png" />
+    <None Remove="5625651.jpg" />
+    <None Remove="60656502.jpg" />
+    <None Remove="6070859dfgdf.jpg" />
+    <None Remove="6594287.png" />
+    <None Remove="6cf4c17a-af58-4515-8fb8-64807891e856-removebg-preview.png" />
+    <None Remove="8342615.png" />
+    <None Remove="abstract-background-6m6cjbifu3zpfv84.jpg" />
+    <None Remove="back-blue-button-xs-removebg-preview.png" />
+    <None Remove="Blue_Delicate_Information_Table_Graph__3_-removebg-preview %281%29.png" />
+    <None Remove="Blue_Delicate_Information_Table_Graph__4_-removebg-preview.png" />
+    <None Remove="Button Add.png" />
+    <None Remove="c62e38d1a67143b60ee517b064bd2c7c.jpg" />
+    <None Remove="ChickenHaven.gif" />
+    <None Remove="chickenlogo.png" />
+    <None Remove="CK2-removebg-preview.png" />
+    <None Remove="CK3-removebg-preview.png" />
+    <None Remove="CK4-removebg-preview %281%29.png" />
+    <None Remove="CK4-removebg-preview.png" />
+    <None Remove="CK5-removebg-preview.png" />
+    <None Remove="CK6-removebg-preview.png" />
+    <None Remove="desktop-wallpaper-backgrounds-for-login-page-login-page.jpg" />
+    <None Remove="DK1-removebg-preview.png" />
+    <None Remove="DK2-removebg-preview.png" />
+    <None Remove="DK3-removebg-preview.png" />
+    <None Remove="DK4-removebg-preview.png" />
+    <None Remove="DK5-removebg-preview.png" />
+    <None Remove="DK6-removebg-preview.png" />
+    <None Remove="dsfsdgs.png" />
+    <None Remove="edit-info-people-user-icon-vector-20080647-removebg-preview.png" />
+    <None Remove="HD-wallpaper-dark-purple-to-red-to-orange-gradient.jpg" />
+    <None Remove="homepic_gif.gif" />
+    <None Remove="home_bg.png" />
+    <None Remove="Images\1111 %283%29.gif" />
+    <None Remove="Images\final.gif" />
+    <None Remove="images__1_-removebg-preview.png" />
+    <None Remove="istockphoto-1306827906-612x612-removebg-preview.png" />
+    <None Remove="lock+locked+padlock+password+protect+protection+security+icon-1320190821382894921.png" />
+    <None Remove="ml1.-removebg-preview.png" />
+    <None Remove="ml2.-removebg-preview.png" />
+    <None Remove="ml3.-removebg-preview.png" />
+    <None Remove="ml4.-removebg-preview.png" />
+    <None Remove="ml5.-removebg-preview.png" />
+    <None Remove="ml6.-removebg-preview.png" />
+    <None Remove="neewww.jpg" />
+    <None Remove="newCK5.png" />
+    <None Remove="newCK6.png" />
+    <None Remove="newww.png" />
+    <None Remove="Orange_Minimalist_Chicken_Illustration_Gaming_Logo-removebg-preview.png" />
+    <None Remove="Orange___White_Simple_Food_Menu-removebg-preview %281%29.png" />
+    <None Remove="Orange___White_Simple_Food_Menu-removebg-preview.png" />
+    <None Remove="outlineee.jpg" />
+    <None Remove="Pink_Minimalist_Salon_Beauty_Price_List-removebg-preview.png" />
+    <None Remove="PZ1-removebg-preview.png" />
+    <None Remove="PZ2-removebg-preview.png" />
+    <None Remove="PZ3-removebg-preview.png" />
+    <None Remove="PZ4-removebg-preview.png" />
+    <None Remove="PZ5-removebg-preview.png" />
+    <None Remove="PZ6-removebg-preview.png" />
+    <None Remove="receipt_printer-removebg-preview.png" />
+    <None Remove="Rizal_Technological_University.png" />
+    <None Remove="Screenshot %28140%29.png" />
+    <None Remove="Screenshot %28141%2900.png" />
+    <None Remove="Screenshot %28154%29.png" />
+    <None Remove="Screenshot %28179%29.png" />
+    <None Remove="Screenshot %28181%29.png" />
+    <None Remove="Screenshot %28181%292222.png" />
+    <None Remove="Screenshot__159_-removebg-preview.png" />
+    <None Remove="Screenshot__168_-removebg-preview.png" />
+    <None Remove="search button.png" />
+    <None Remove="trash-can-icon-ideal-for-expressing-deletion-etc-vector-removebg-preview %281%29.png" />
+    <None Remove="Untitled_design__3_-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="1698402555354.jpg" />
+    <Resource Include="1803143.png" />
+    <Resource Include="206428-arrow-abstract-red-orange-and-blue-gradient-background.jpg" />
+    <Resource Include="360_F_509708727_A2djiNxEF7pcsLedpEz0dcMKzjIrw9ri-removebg-preview.png" />
+    <Resource Include="3892125.png" />
+    <Resource Include="4720176.png" />
+    <Resource Include="4914ff227.png" />
+    <Resource Include="527489.png" />
+    <Resource Include="5625651.jpg" />
+    <Resource Include="60656502.jpg" />
+    <Resource Include="6070859dfgdf.jpg" />
+    <Resource Include="6594287.png" />
+    <Resource Include="6cf4c17a-af58-4515-8fb8-64807891e856-removebg-preview.png" />
+    <Resource Include="8342615.png" />
+    <Resource Include="abstract-background-6m6cjbifu3zpfv84.jpg" />
+    <Resource Include="back-blue-button-xs-removebg-preview.png" />
+    <Resource Include="Blue_Delicate_Information_Table_Graph__3_-removebg-preview (1).png" />
+    <Resource Include="Blue_Delicate_Information_Table_Graph__4_-removebg-preview.png" />
+    <Resource Include="Button Add.png" />
+    <Resource Include="c62e38d1a67143b60ee517b064bd2c7c.jpg" />
+    <Content Include="Images\1111 (3).gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\ChickenHaven.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\final.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="chickenlogo.png" />
+    <Resource Include="CK2-removebg-preview.png" />
+    <Resource Include="CK3-removebg-preview.png" />
+    <Resource Include="CK4-removebg-preview (1).png" />
+    <Resource Include="CK4-removebg-preview.png" />
+    <Resource Include="CK5-removebg-preview.png" />
+    <Resource Include="CK6-removebg-preview.png" />
+    <Resource Include="desktop-wallpaper-backgrounds-for-login-page-login-page.jpg" />
+    <Resource Include="DK1-removebg-preview.png" />
+    <Resource Include="DK2-removebg-preview.png" />
+    <Resource Include="DK3-removebg-preview.png" />
+    <Resource Include="DK4-removebg-preview.png" />
+    <Resource Include="DK5-removebg-preview.png" />
+    <Resource Include="DK6-removebg-preview.png" />
+    <Resource Include="dsfsdgs.png" />
+    <Resource Include="edit-info-people-user-icon-vector-20080647-removebg-preview.png" />
+    <Resource Include="HD-wallpaper-dark-purple-to-red-to-orange-gradient.jpg" />
+    <Resource Include="homepic_gif.gif" />
+    <Resource Include="home_bg.png" />
+    <Resource Include="images__1_-removebg-preview.png" />
+    <Resource Include="istockphoto-1306827906-612x612-removebg-preview.png" />
+    <Resource Include="lock+locked+padlock+password+protect+protection+security+icon-1320190821382894921.png" />
+    <Resource Include="ml1.-removebg-preview.png" />
+    <Resource Include="ml2.-removebg-preview.png" />
+    <Resource Include="ml3.-removebg-preview.png" />
+    <Resource Include="ml4.-removebg-preview.png" />
+    <Resource Include="ml5.-removebg-preview.png" />
+    <Resource Include="ml6.-removebg-preview.png" />
+    <Resource Include="neewww.jpg" />
+    <Resource Include="newCK5.png" />
+    <Resource Include="newCK6.png" />
+    <Resource Include="newww.png" />
+    <Resource Include="Orange_Minimalist_Chicken_Illustration_Gaming_Logo-removebg-preview.png" />
+    <Resource Include="Orange___White_Simple_Food_Menu-removebg-preview (1).png" />
+    <Resource Include="Orange___White_Simple_Food_Menu-removebg-preview.png" />
+    <Resource Include="outlineee.jpg" />
+    <Resource Include="Pink_Minimalist_Salon_Beauty_Price_List-removebg-preview.png" />
+    <Resource Include="PZ1-removebg-preview.png" />
+    <Resource Include="PZ2-removebg-preview.png" />
+    <Resource Include="PZ3-removebg-preview.png" />
+    <Resource Include="PZ4-removebg-preview.png" />
+    <Resource Include="PZ5-removebg-preview.png" />
+    <Resource Include="PZ6-removebg-preview.png" />
+    <Resource Include="receipt_printer-removebg-preview.png" />
+    <Resource Include="Rizal_Technological_University.png" />
+    <Resource Include="Screenshot (140).png" />
+    <Resource Include="Screenshot (141)00.png" />
+    <Resource Include="Screenshot (154).png" />
+    <Resource Include="Screenshot (179).png" />
+    <Resource Include="Screenshot (181).png" />
+    <Resource Include="Screenshot (181)2222.png" />
+    <Resource Include="Screenshot__159_-removebg-preview.png" />
+    <Resource Include="Screenshot__168_-removebg-preview.png" />
+    <Resource Include="search button.png" />
+    <Resource Include="trash-can-icon-ideal-for-expressing-deletion-etc-vector-removebg-preview (1).png" />
+    <Resource Include="Untitled_design__3_-removebg-preview.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="database\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

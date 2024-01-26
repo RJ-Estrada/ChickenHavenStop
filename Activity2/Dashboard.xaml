@@ -1,0 +1,912 @@
+﻿<Window x:Class="Activity2.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activity2"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="829" Width="1537" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FFDD5555" Offset="1"/>
+            <GradientStop Color="#FFE6DF71" Offset="0.026"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Grid.Background>
+            <ImageBrush ImageSource="/206428-arrow-abstract-red-orange-and-blue-gradient-background.jpg"/>
+        </Grid.Background>
+        
+        <Image x:Name="home_gif" gif:ImageBehavior.RepeatBehavior="Forever"
+       gif:ImageBehavior.AnimatedSource="Images/1111 (3).gif" Margin="0,214,0,0" Height="599" Width="1537" />
+        
+        <ScrollViewer x:Name="meal_panel" HorizontalAlignment="Left" Height="503" Margin="119,269,0,0" VerticalAlignment="Top" Width="844" Visibility="Hidden">
+            <Grid x:Name="mealGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="ml1" Height="238" Width="264" Click="ml1_Click" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/ml1.-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ml2" Height="238" Width="264" Click="ml2_Click" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="269,0,0,0">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/ml2.-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ml3" HorizontalAlignment="Left" Height="238" Margin="538,0,0,0" VerticalAlignment="Top" Width="264" Click="ml3_Click" BorderBrush="{x:Null}" Grid.Row="0">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/ml3.-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ml4" HorizontalAlignment="Left" Height="238" Margin="0,252,0,0" VerticalAlignment="Top" Width="264" Click="ml4_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/ml4.-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ml5" HorizontalAlignment="Left" Height="238" Margin="269,252,0,0" VerticalAlignment="Top" Width="264" Click="ml5_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/ml5.-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ml6" HorizontalAlignment="Left" Height="238" Margin="538,252,0,0" VerticalAlignment="Top" Width="264" Click="ml6_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/ml6.-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="drinks_panel" HorizontalAlignment="Left" Height="503" Margin="119,268,0,0" VerticalAlignment="Top" Width="844" Visibility="Hidden">
+            <Grid x:Name="drinksGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="dk1" Height="238" Width="264" Click="dk1_Click" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/DK1-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="dk2" Grid.Row="0" Height="238" Width="264" Click="dk2_Click" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="269,0,0,0">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/DK2-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="dk3" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="538,0,0,0" VerticalAlignment="Top" Width="264" Click="dk3_Click" BorderBrush="{x:Null}">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/DK3-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="dk4" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="0,252,0,0" VerticalAlignment="Top" Width="264" Click="dk4_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/DK4-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="dk5" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="269,252,0,0" VerticalAlignment="Top" Width="264" Click="dk5_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/DK5-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="dk6" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="538,252,0,0" VerticalAlignment="Top" Width="264" Click="dk6_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/DK6-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="chicken_panel" HorizontalAlignment="Left" Height="504" Margin="119,268,0,0" VerticalAlignment="Top" Width="844" Visibility="Hidden">
+            <Grid x:Name="chickenGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Button x:Name="ck1" Grid.Row="0" Height="238" Width="264" Click="ck1_Click" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/Orange___White_Simple_Food_Menu-removebg-preview (1).png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ck2" Grid.Row="0" HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="264" Click="ck2_Click" BorderBrush="{x:Null}" Margin="269,0,0,0">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/CK2-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ck3" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="538,0,0,0" VerticalAlignment="Top" Width="264" Click="ck3_Click" BorderBrush="{x:Null}">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/CK3-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ck4" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="0,252,0,0" VerticalAlignment="Top" Width="264" Click="ck4_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/CK4-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ck5" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="269,252,0,0" VerticalAlignment="Top" Width="264" Click="ck5_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/newCK5.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="ck6" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="538,252,0,0" VerticalAlignment="Top" Width="264" Click="ck6_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/newCK6.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="pizza_panel" HorizontalAlignment="Left" Height="504" Margin="119,268,0,0" VerticalAlignment="Top" Width="844" Visibility="Hidden">
+            <Grid x:Name="pizzaGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Button x:Name="pz1" Grid.Row="0" Height="238" Width="264" Click="pz1_Click" BorderBrush="{x:Null}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/PZ1-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="pz2" Grid.Row="0" HorizontalAlignment="Left" Height="238" VerticalAlignment="Top" Width="264" Click="pz2_Click" BorderBrush="{x:Null}" Margin="269,0,0,0" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/PZ2-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="pz3" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="538,0,0,0" VerticalAlignment="Top" Width="264" Click="pz3_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/PZ3-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="pz4" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="0,252,0,0" VerticalAlignment="Top" Width="264" Click="pz4_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/PZ4-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="pz5" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="269,252,0,0" VerticalAlignment="Top" Width="264" Click="pz5_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/PZ5-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="pz6" Grid.Row="0" HorizontalAlignment="Left" Height="238" Margin="538,252,0,0" VerticalAlignment="Top" Width="264" Click="pz6_Click" BorderBrush="{x:Null}" Grid.RowSpan="2">
+                    <Button.Effect>
+                        <DropShadowEffect/>
+                    </Button.Effect>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border x:Name="border" BorderBrush="Transparent" BorderThickness="1">
+                                            <Image Source="/PZ6-removebg-preview.png"/>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter TargetName="border" Property="BorderBrush" Value="White"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </Button.Style>
+                </Button>
+            </Grid>
+        </ScrollViewer>
+
+        <TextBlock x:Name="home_image" HorizontalAlignment="Center" Height="599" Margin="0,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1537" Visibility="Hidden"  >
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/home_bg.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+
+        <TextBlock HorizontalAlignment="Center" Height="214" TextWrapping="Wrap" VerticalAlignment="Top" Width="1537">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/1698402555354.jpg"/>
+            </TextBlock.Background>
+        </TextBlock>
+
+
+        <TextBlock HorizontalAlignment="Left" Height="142" Margin="22,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="1081">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Screenshot__168_-removebg-preview.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+
+
+        <Button x:Name="Drinks" Content="DRINKS" HorizontalAlignment="Left" Height="46" Margin="585,66,0,0" VerticalAlignment="Top" Width="150" Click="Drinks_Click_1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="36" FontWeight="Bold" FontFamily="Gill Sans MT">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Meal" Content="MEAL" HorizontalAlignment="Left" Height="44" Margin="745,66,0,0" VerticalAlignment="Top" Width="150" Click="Meal_Click" BorderBrush="{x:Null}" Background="{x:Null}" Foreground="White" FontSize="36" FontWeight="Bold" FontFamily="Gill Sans MT">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Button x:Name="Pizza" Content="PIZZA" HorizontalAlignment="Left" Height="48" Margin="412,64,0,0" VerticalAlignment="Top" Width="150" Click="Pizza_Click" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontFamily="Gill Sans MT">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+        <Button x:Name="back_btn" HorizontalAlignment="Left" Height="52" Margin="1455,12,0,0" VerticalAlignment="Top" Width="54" BorderBrush="{x:Null}" Click="back_btn_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/back-blue-button-xs-removebg-preview.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="rectangle" HorizontalAlignment="Left" Height="414" Margin="1091,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Visibility="Hidden">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Blue_Delicate_Information_Table_Graph__3_-removebg-preview (1).png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="checkout_txt" HorizontalAlignment="Left" Height="140" Margin="1141,5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Foreground="White" OpacityMask="#FFFAFAFA" Visibility="Hidden">
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Screenshot__159_-removebg-preview.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="column_name" HorizontalAlignment="Left" Height="32" Margin="1113,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="379" Visibility="Hidden">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/Blue_Delicate_Information_Table_Graph__4_-removebg-preview.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <ListBox x:Name="qty" HorizontalAlignment="Left" Height="242" Margin="1113,208,0,0" VerticalAlignment="Top" Width="52" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="Black" HorizontalContentAlignment="Center" IsHitTestVisible="False" FontFamily="Comic Sans MS" FontWeight="Bold" Visibility="Hidden">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7BB1" Offset="0.006"/>
+                    <GradientStop Color="#FFFFC174" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <ListBox x:Name="item" Height="242" Margin="1164,208,0,0" VerticalAlignment="Top" d:ItemsSource="{d:SampleData ItemCount=5}" RenderTransformOrigin="0.5,0.5" BorderBrush="Black" Foreground="Black" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Width="207" SelectionChanged="item_SelectionChanged" FontFamily="Comic Sans MS" FontWeight="Bold" Visibility="Hidden">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7BB1" Offset="0"/>
+                    <GradientStop Color="#FFFFBB79" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.449"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.525"/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <ListBox x:Name="prices" HorizontalAlignment="Left" Height="241" Margin="1430,207,0,0" VerticalAlignment="Top" Width="61" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="Black" HorizontalContentAlignment="Center" IsHitTestVisible="False" FontFamily="Comic Sans MS" FontWeight="Bold" Visibility="Hidden">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7FAE" Offset="0.006"/>
+                    <GradientStop Color="#FFFFB87C" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <Button x:Name="minus" HorizontalAlignment="Left" Height="70" Margin="1116,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="minus_Click" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/6594287.png"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <TextBlock HorizontalAlignment="Left" Height="109" Margin="983,533,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="413">
+                <TextBlock.Background>
+                    <ImageBrush ImageSource="/Screenshot (154).png"/>
+                </TextBlock.Background>
+            </TextBlock>
+        </Button>
+        <Button x:Name="add" HorizontalAlignment="Left" Height="70" Margin="1200,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="add_Click" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/Button Add.png"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="trash" HorizontalAlignment="Left" Height="70" Margin="1412,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="trash_Click" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/trash-can-icon-ideal-for-expressing-deletion-etc-vector-removebg-preview (1).png"/>
+            </Button.Background>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="add_PZ" HorizontalAlignment="Left" Height="70" Margin="1200,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="add_PZ_Click" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/Button Add.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="minus_PZ" HorizontalAlignment="Left" Height="70" Margin="1116,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="minus_PZ_Click" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/6594287.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="minus_DK" HorizontalAlignment="Left" Height="70" Margin="1116,463,0,0" VerticalAlignment="Top" Width="70" Click="minus_DK_Click" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/6594287.png"/>
+            </Button.Background>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="add_DK" HorizontalAlignment="Left" Height="70" Margin="1200,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="add_DK_Click" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/Button Add.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="minus_ML" HorizontalAlignment="Left" Height="70" Margin="1116,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="minus_ML_Click" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/6594287.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="add_ML" HorizontalAlignment="Left" Height="70" Margin="1200,463,0,0" VerticalAlignment="Top" Width="70" BorderBrush="{x:Null}" Click="add_ML_Click" Visibility="Hidden"  >
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/Button Add.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="rectangle_tot" HorizontalAlignment="Left" Height="212" Margin="1109,572,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Visibility="Hidden">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/dsfsdgs.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <TextBlock x:Name="subT" HorizontalAlignment="Left" Height="17" Margin="1141,622,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="159" FontFamily="Cambria Math" FontSize="16" Visibility="Hidden"><Run Text="Subtotal:"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="subTotal" HorizontalAlignment="Left" Height="30" Margin="1351,712,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Right" FontFamily="Cambria Math" FontSize="16" TextChanged="subTotal_TextChanged" Background="{x:Null}" BorderBrush="{x:Null}" TextDecorations="Underline" Visibility="Hidden"/>
+        <Button x:Name="order" Content="Place Order" HorizontalAlignment="Left" Height="35" Margin="1300,737,0,0" VerticalAlignment="Top" Width="160" FontSize="14" Foreground="White" BorderBrush="{x:Null}" FontWeight="Bold" Click="order_Click" Visibility="Hidden">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/HD-wallpaper-dark-purple-to-red-to-orange-gradient.jpg"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="disc" HorizontalAlignment="Left" Height="17" Margin="1141,641,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" FontFamily="Cambria Math" FontSize="16" Visibility="Hidden"><Run Text="Discount"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <CheckBox x:Name="pwd_disc" Content="PWD" HorizontalAlignment="Left" Height="24" Margin="1174,666,0,0" VerticalAlignment="Top" Width="108" FontFamily="Dubai Medium" Checked="pwd_disc_Checked" Unchecked="pwd_disc_Unchecked" Visibility="Hidden"/>
+        <CheckBox x:Name="senior_disc" Content="Senior" HorizontalAlignment="Left" Height="24" Margin="1174,688,0,0" VerticalAlignment="Top" Width="108" FontFamily="Dubai Medium" Checked="senior_disc_Checked" Unchecked="senior_disc_Unchecked" Visibility="Hidden"/>
+        <TextBlock x:Name="tot" HorizontalAlignment="Left" Height="23" Margin="1141,712,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontFamily="Cambria Math" FontSize="18" FontWeight="Bold" Visibility="Hidden"><Run Language="en-ph" Text="Total"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="Void" HorizontalAlignment="Left" Height="90" Margin="888,42,0,0" VerticalAlignment="Top" Width="182" Click="Void_Click" BorderBrush="{x:Null}" Background="{x:Null}" FontFamily="Gill Sans MT" FontWeight="Bold" FontSize="30">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" Text="ORDER" Foreground="White" >
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+                <TextBlock Text="HISTORY" Foreground="White" >
+                    <TextBlock.Effect>
+                        <DropShadowEffect/>
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+        </Button>
+        <Button x:Name="Chicken" Content="CHICKEN" HorizontalAlignment="Left" Height="46" Margin="220,64,0,0" VerticalAlignment="Top" Width="180" Click="Chicken_Click" Background="{x:Null}" BorderBrush="{x:Null}" FontSize="36" FontWeight="Bold" Foreground="White" FontFamily="Gill Sans MT">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="search_bar" HorizontalAlignment="Left" Height="39" Margin="124,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="922" VerticalContentAlignment="Center" FontSize="16" TextChanged="search_bar_TextChanged" Visibility="Hidden"  >
+            <TextBox.Effect>
+                <DropShadowEffect/>
+            </TextBox.Effect>
+        </TextBox>
+        <TextBlock x:Name="search_icon" HorizontalAlignment="Left" Height="39" Margin="69,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="44" Visibility="Hidden"  >
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/search button.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+        <Button x:Name="home" Content="HOME" HorizontalAlignment="Left" Height="60" Margin="42,57,0,0" VerticalAlignment="Top" Width="186" FontFamily="Gill Sans MT" FontSize="36" FontWeight="Bold" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="home_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="actual_subtotal" HorizontalAlignment="Left" Height="20" Margin="1352,621,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" HorizontalContentAlignment="Right" FontFamily="Cambria Math" FontSize="16" TextDecorations="Underline" Background="{x:Null}" BorderBrush="{x:Null}" Visibility="Hidden"  />
+        <ListBox x:Name="item_price" HorizontalAlignment="Left" Height="241" Margin="1370,207,0,0" VerticalAlignment="Top" Width="60" d:ItemsSource="{d:SampleData ItemCount=5}" FontWeight="Bold" FontFamily="Comic Sans MS" HorizontalContentAlignment="Center" BorderBrush="Black" IsHitTestVisible="False" Visibility="Hidden">
+            <ListBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF7EAE"/>
+                    <GradientStop Color="#FFFFB77C" Offset="1"/>
+                </LinearGradientBrush>
+            </ListBox.Background>
+        </ListBox>
+        <TextBlock x:Name="disc20_1" HorizontalAlignment="Left" Height="24" Margin="1321,666,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" TextAlignment="Right" FontFamily="Dubai Medium" Visibility="Hidden"><Run Language="en-ph" Text="- 20%"/></TextBlock>
+        <TextBlock x:Name="disc20_2" HorizontalAlignment="Left" Height="24" Margin="1321,688,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138" TextAlignment="Right" FontFamily="Dubai Medium" Visibility="Hidden"><Run Language="en-ph" Text="- 20%"/></TextBlock>
+        <TextBlock x:Name="cash" HorizontalAlignment="Left" Height="17" Margin="1140,733,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" FontFamily="Cambria Math" FontSize="14" Text="Enter Cash Amount:" Visibility="Hidden"/>
+        <TextBox x:Name="cash_amount" HorizontalAlignment="Left" Height="24" Margin="1141,750,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" VerticalContentAlignment="Center" FontFamily="Cambria Math" FontSize="16" Background="{x:Null}" Visibility="Hidden">
+            <TextBox.BorderBrush>
+                <ImageBrush ImageSource="/outlineee.jpg"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+    </Grid>
+</Window>

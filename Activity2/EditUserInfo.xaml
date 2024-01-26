@@ -1,0 +1,57 @@
+﻿<Window x:Class="Activity2.EditUserInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activity2"
+        mc:Ignorable="d"
+        Title="EditUserInfo" Height="570" Width="338" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Screenshot (181).png"/>
+        </Grid.Background>
+        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontWeight="Bold" Foreground="White"><Run Language="en-ph" Text="Name:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontWeight="Bold" Foreground="White"><Run Language="en-ph" Text="Email"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="32,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontWeight="Bold" Foreground="White"><Run Language="en-ph" Text="Address:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,315,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontWeight="Bold" Foreground="White"><Run Language="en-ph" Text="Username"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="24" Margin="0,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontWeight="Bold" Foreground="White"><Run Language="en-ph" Text="Role"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="24" Margin="32,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontWeight="Bold" Foreground="White"><Run Language="en-ph" Text="Status"/><Run Text=":"/></TextBlock>
+        <TextBox x:Name="name_info" HorizontalAlignment="Center" Height="24" Margin="0,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="email_info" HorizontalAlignment="Center" Height="24" Margin="0,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="address_info" HorizontalAlignment="Center" Height="24" Margin="0,285,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="username_info" HorizontalAlignment="Center" Height="24" Margin="0,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" VerticalContentAlignment="Center" IsHitTestVisible="False"/>
+        <ComboBox x:Name="role_info" HorizontalAlignment="Center" Margin="0,387,0,0" VerticalAlignment="Top" Width="258" Height="24" SelectionChanged="role_info_SelectionChanged"/>
+        <ComboBox x:Name="status_info" HorizontalAlignment="Center" Margin="0,438,0,0" VerticalAlignment="Top" Width="258" Height="24" SelectionChanged="status_info_SelectionChanged"/>
+        <Button HorizontalAlignment="Left" Height="32" Margin="35,480,0,0" VerticalAlignment="Top" Width="121" Content="Update Info" FontWeight="Bold" BorderBrush="White" Foreground="White" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6B73F0"/>
+                    <GradientStop Color="#FFC64BDD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button HorizontalAlignment="Left" Height="32" Margin="169,480,0,0" VerticalAlignment="Top" Width="121" Content="Cancel" FontWeight="Bold" BorderBrush="White" Foreground="White" Click="Button_Click_1">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF6B73F0"/>
+                    <GradientStop Color="#FFC64BDD" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock HorizontalAlignment="Center" Height="127" Margin="0,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126">
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect>
+            <TextBlock.Background>
+                <ImageBrush ImageSource="/edit-info-people-user-icon-vector-20080647-removebg-preview.png"/>
+            </TextBlock.Background>
+        </TextBlock>
+
+    </Grid>
+</Window>

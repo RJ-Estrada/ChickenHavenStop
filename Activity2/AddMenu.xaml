@@ -1,0 +1,75 @@
+﻿<Window x:Class="Activity2.AddMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Activity2"
+        mc:Ignorable="d"
+        Title="AddMenu" Height="324" Width="519" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Screenshot (181).png"/>
+        </Grid.Background>
+        <TextBox HorizontalAlignment="Left" Height="161" Margin="320,49,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="156" Foreground="{x:Null}" Background="{x:Null}" BorderBrush="White" IsHitTestVisible="False"/>
+
+
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="37,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="en-ph" Text="Add Menu For"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="37,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Language="en-ph" Text="Menu Name"/><Run Text=":"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="37,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect><Run Text="Menu "/><Run Language="en-ph" Text="Price"/><Run Text=":"/></TextBlock>
+        <ComboBox x:Name="menu_option" HorizontalAlignment="Left" Height="30" Margin="37,51,0,0" VerticalAlignment="Top" Width="262" SelectionChanged="menu_option_SelectionChanged"/>
+        <TextBox x:Name="menu_name" HorizontalAlignment="Left" Height="30" Margin="37,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="menu_price" HorizontalAlignment="Left" Height="30" Margin="37,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" VerticalContentAlignment="Center"/>
+        <Button HorizontalAlignment="Left" Height="41" Margin="174,224,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click" Content="Cancel" FontWeight="Bold" Foreground="White" BorderBrush="White" FontSize="14">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/HD-wallpaper-dark-purple-to-red-to-orange-gradient.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="add_menu" HorizontalAlignment="Left" Height="41" Margin="37,224,0,0" VerticalAlignment="Top" Width="125" Content="Add Menu" FontWeight="Bold" Click="add_menu_Click" Foreground="White" BorderBrush="White" FontSize="14">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+            <Button.Background>
+                <ImageBrush ImageSource="/HD-wallpaper-dark-purple-to-red-to-orange-gradient.jpg"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="menu_img" HorizontalAlignment="Left" Height="157" Margin="322,51,0,0" VerticalAlignment="Top" Width="152"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="322,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" FontWeight="Bold" FontStyle="Italic" FontSize="14" Foreground="White" Text="Insert Image:">
+            <TextBlock.Background>
+                <ImageBrush/>
+            </TextBlock.Background>
+            <TextBlock.Effect>
+                <DropShadowEffect/>
+            </TextBlock.Effect></TextBlock>
+        <Button x:Name="select_img" Content="Select Image" HorizontalAlignment="Left" Height="41" Margin="322,224,0,0" VerticalAlignment="Top" Width="152" RenderTransformOrigin="0.514,0.547" BorderBrush="White" FontWeight="Bold" Foreground="White" FontSize="14" Click="select_img_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="/HD-wallpaper-dark-purple-to-red-to-orange-gradient.jpg"/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+
+    </Grid>
+</Window>
